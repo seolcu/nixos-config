@@ -17,7 +17,8 @@
     ../../nixosModules/fonts.nix
     ../../nixosModules/stylix.nix
     ../../nixosModules/virt-manager.nix
-    ../../nixosModules/hyprland.nix
+    # ../../nixosModules/hyprland.nix
+    ../../nixosModules/plasma.nix
   ];
 
   boot = {

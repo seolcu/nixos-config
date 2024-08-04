@@ -8,7 +8,7 @@
 
 {
   imports = [
-    ../../homeModules/hyprland.nix
+    # ../../homeModules/hyprland.nix
     ../../homeModules/virt-manager.nix
   ];
   # Allow unfree packages
