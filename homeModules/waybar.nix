@@ -253,35 +253,43 @@
         };
       }
     ];
+
     style = ''
       * {
-          color: #FFFFFF;
-          font-family: FontAwesome, JetBrainsMono Nerd Font;
+        color: #FFFFFF;
+        font-family: FontAwesome, JetBrainsMono Nerd Font;
       }
+
       .modules-left #workspaces button {
-          border-bottom: none;
+        border-bottom: none;
       }
+
       .modules-left #workspaces button.focused,
       .modules-left #workspaces button.active {
-          border-bottom: none;
-          background: alpha(@base01, 1.000000);
+        border-bottom: none;
+        background: alpha(@base01, 1.000000);
       }
+
       .modules-center #workspaces button {
-          border-bottom: none;
+        border-bottom: none;
       }
+
       .modules-center #workspaces button.focused,
       .modules-center #workspaces button.active {
-          border-bottom: none;
-          background: alpha(@base01, 1.000000);
+        border-bottom: none;
+        background: alpha(@base01, 1.000000);
       }
+
       .modules-right #workspaces button {
-          border-bottom: none;
+        border-bottom: none;
       }
+
       .modules-right #workspaces button.focused,
       .modules-right #workspaces button.active {
-          border-bottom: none;
-          background: alpha(@base01, 1.000000);
+        border-bottom: none;
+        background: alpha(@base01, 1.000000);
       }
+
       #clock,
       #battery,
       #cpu,
@@ -299,7 +307,7 @@
       #scratchpad,
       #power-profiles-daemon,
       #mpd {
-          padding: 0 10px;
+        padding: 0 10px;
       }
     '';
   };

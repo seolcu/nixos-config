@@ -7,7 +7,6 @@
       url = "github:nix-community/home-manager/master";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
     stylix.url = "github:danth/stylix";
   };
 

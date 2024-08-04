@@ -6,6 +6,8 @@
   config,
   pkgs,
   inputs,
+  host,
+  username,
   ...
 }:
 {
@@ -67,7 +69,7 @@
   };
 
   networking = {
-    hostName = "nixos";
+    hostName = host;
     networkmanager.enable = true;
     # Open ports in the firewall.
     # firewall.allowedTCPPorts = [ ... ];
@@ -125,9 +127,9 @@
   security.rtkit.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.seolcu = {
+  users.users."${username}" = {
     isNormalUser = true;
-    description = "seolcu";
+    description = username;
     extraGroups = [
       "networkmanager"
       "wheel"
