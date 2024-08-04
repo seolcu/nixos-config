@@ -99,11 +99,6 @@
       LC_TELEPHONE = "ko_KR.UTF-8";
       LC_TIME = "ko_KR.UTF-8";
     };
-    inputMethod = {
-      type = "fcitx5";
-      enable = true;
-      fcitx5.addons = with pkgs; [ fcitx5-hangul ];
-    };
   };
 
   programs = {
