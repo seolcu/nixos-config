@@ -4,6 +4,7 @@
     ./kitty.nix
     ./waybar.nix
     ./hypridle.nix
+    ./kdeconnect.nix
   ];
   home.packages = with pkgs; [
     hyprshot

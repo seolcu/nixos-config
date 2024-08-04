@@ -9,6 +9,7 @@
 {
   imports = [
     # ../../homeModules/hyprland.nix
+    # ../../homeModules/plasma.nix
     ../../homeModules/virt-manager.nix
   ];
   # Allow unfree packages
@@ -134,9 +135,5 @@
     };
     cava.enable = true;
     mangohud.enable = true;
-  };
-
-  services.kdeconnect = {
-    enable = true;
   };
 }
