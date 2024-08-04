@@ -18,8 +18,8 @@
     ../../nixosModules/stylix.nix
     ../../nixosModules/virt-manager.nix
     # ../../nixosModules/hyprland.nix
-    ../../nixosModules/plasma.nix
-    # ../../nixosModules/gnome.nix
+    # ../../nixosModules/plasma.nix
+    ../../nixosModules/gnome.nix
   ];
 
   boot = {
@@ -49,7 +49,7 @@
       };
     };
     # Enable touchpad support (enabled default in most desktopManager).
-    libinput.enable = true;
+    # libinput.enable = true;
     # Enable CUPS to print documents.
     printing.enable = true;
     pipewire = {
@@ -126,7 +126,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users."${username}" = {
     isNormalUser = true;
-    description = username;
+    description = "설규원";
     extraGroups = [
       "networkmanager"
       "wheel"
