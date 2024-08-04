@@ -1,6 +1,6 @@
-{ ... }:
+{ pkgs, ... }:
 {
-  imports = [ ./ibus.nix ];
+  imports = [ ./fcitx5.nix ];
   # Enable the X11 windowing system.
   services.xserver = {
     enable = true;
@@ -8,4 +8,5 @@
     displayManager.gdm.enable = true;
     desktopManager.gnome.enable = true;
   };
+  environment.gnome.excludePackages = [ pkgs.epiphany ];
 }
