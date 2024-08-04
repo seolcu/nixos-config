@@ -18,8 +18,8 @@
     ../../nixosModules/stylix.nix
     ../../nixosModules/virt-manager.nix
     # ../../nixosModules/hyprland.nix
-    # ../../nixosModules/plasma.nix
-    ../../nixosModules/gnome.nix
+    ../../nixosModules/plasma.nix
+    # ../../nixosModules/gnome.nix
   ];
 
   boot = {
