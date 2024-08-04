@@ -12,14 +12,17 @@
 }:
 {
   imports = [
+    # Desktop environment modules
+    # ../../nixosModules/hyprland.nix
+    ../../nixosModules/plasma.nix
+    # ../../nixosModules/gnome.nix
+
     # Include the results of the hardware scan. `--impure` option is required.
     /etc/nixos/hardware-configuration.nix
+
     ../../nixosModules/fonts.nix
     ../../nixosModules/stylix.nix
     ../../nixosModules/virt-manager.nix
-    # ../../nixosModules/hyprland.nix
-    # ../../nixosModules/plasma.nix
-    ../../nixosModules/gnome.nix
   ];
 
   boot = {

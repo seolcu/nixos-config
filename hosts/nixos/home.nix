@@ -8,9 +8,11 @@
 
 {
   imports = [
+    # Desktop environment modules
     # ../../homeModules/hyprland.nix
-    # ../../homeModules/plasma.nix
-    ../../homeModules/gnome.nix
+    ../../homeModules/plasma.nix
+    # ../../homeModules/gnome.nix
+
     ../../homeModules/virt-manager.nix
   ];
   # Allow unfree packages
