@@ -46,9 +46,9 @@
         layout = "kr";
         variant = "kr104";
       };
-      # Enable touchpad support (enabled default in most desktopManager).
-      # libinput.enable = true;
     };
+    # Enable touchpad support (enabled default in most desktopManager).
+    libinput.enable = true;
     # Enable CUPS to print documents.
     printing.enable = true;
     pipewire = {
