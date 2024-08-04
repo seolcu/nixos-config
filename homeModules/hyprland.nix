@@ -5,8 +5,15 @@
     ./waybar.nix
     ./hypridle.nix
   ];
+  home.packages = with pkgs; [
+    hyprshot
+    nautilus
+    brightnessctl
+    pavucontrol
+  ];
   programs = {
     imv.enable = true;
+    mpv.enable = true;
     swaylock.enable = true;
     rofi = {
       enable = true;

@@ -48,24 +48,14 @@
       # (writeShellScriptBin "my-hello" ''
       #   echo "Hello, ${config.home.username}!"
       # '')
-      htop
       vscode
-      nautilus
-      gnome-font-viewer
-      mpv
-      loupe
-      brightnessctl
       element-desktop
-      hyprshot
       gcc
       fragments
-      upscayl
       nixd
       nixfmt-rfc-style
       bottles
       papirus-icon-theme
-      mangohud
-      pavucontrol
     ];
 
     # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -122,6 +112,7 @@
 
   programs = {
     home-manager.enable = true;
+    htop.enable = true;
     btop.enable = true;
     bash = {
       enable = true;
@@ -142,6 +133,7 @@
       enable = true;
     };
     cava.enable = true;
+    mangohud.enable = true;
   };
 
   services.kdeconnect = {
