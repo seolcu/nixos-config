@@ -1,6 +1,6 @@
 { ... }:
 {
-  imports = [ ./tuigreet.nix ];
+  imports = [ ./tuigreet-hyprland.nix ];
   services = {
     blueman.enable = true;
     logind.extraConfig = ''
