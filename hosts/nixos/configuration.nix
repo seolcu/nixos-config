@@ -73,6 +73,8 @@
       # no need to redefine it in your config for now)
       #media-session.enable = true;
     };
+    # Enable the OpenSSH daemon.
+    # openssh.enable = true;
   };
 
   networking = {
@@ -175,6 +177,7 @@
         package = pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; };
         name = "JetBrainsMono Nerd Font";
       };
+      # List services that you want to enable:
       serif = {
         package = pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; };
         name = "JetBrainsMono Nerd Font";
@@ -196,15 +199,7 @@
   environment.systemPackages = with pkgs; [
     #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     #  wget
-    papirus-icon-theme
-    mangohud
-    pavucontrol
   ];
-
-  # List services that you want to enable:
-
-  # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
