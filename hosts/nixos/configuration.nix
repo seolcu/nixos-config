@@ -10,8 +10,12 @@
 }:
 {
   imports = [
-    # Include the results of the hardware scan.
+    # Include the results of the hardware scan. `--impure` option is required.
     /etc/nixos/hardware-configuration.nix
+    ../../nixosModules/fonts.nix
+    ../../nixosModules/stylix.nix
+    ../../nixosModules/virt-manager.nix
+    ../../nixosModules/hyprland.nix
   ];
 
   boot = {
@@ -32,21 +36,6 @@
   };
 
   services = {
-    blueman.enable = true;
-    logind.extraConfig = ''
-      # don’t shutdown when power button is short-pressed
-      HandlePowerKey=ignore
-    '';
-    greetd = {
-      enable = true;
-      vt = 7; # Use tty7 for the greetd to get rid of the boot messages.
-      settings = {
-        default_session = {
-          command = "${pkgs.greetd.tuigreet}/bin/tuigreet --cmd Hyprland";
-          user = "seolcu";
-        };
-      };
-    };
     power-profiles-daemon.enable = true;
     # Configure keymap in X11
     xserver = {
@@ -114,25 +103,13 @@
     };
   };
 
-  fonts.packages = with pkgs; [
-    noto-fonts
-    noto-fonts-cjk
-    noto-fonts-emoji
-    inter
-    font-awesome
-    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
-  ];
-
   programs = {
-    hyprland.enable = true;
     firefox.enable = true;
-    nm-applet.enable = true;
     steam = {
       enable = true;
       gamescopeSession.enable = true;
     };
     gamemode.enable = true;
-    virt-manager.enable = true;
     # Some programs need SUID wrappers, can be configured further or are
     # started in user sessions.
     # mtr.enable = true;
@@ -159,47 +136,15 @@
     # packages = with pkgs; [ ];
   };
 
-  stylix = {
-    enable = true;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
-    image = ../../wallpapers/gruvbox_astro.jpg;
-    cursor = {
-      package = pkgs.bibata-cursors;
-      name = "Bibata-Modern-Ice";
-      size = 24;
-    };
-    fonts = {
-      monospace = {
-        package = pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; };
-        name = "JetBrainsMono Nerd Font";
-      };
-      sansSerif = {
-        package = pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; };
-        name = "JetBrainsMono Nerd Font";
-      };
-      # List services that you want to enable:
-      serif = {
-        package = pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; };
-        name = "JetBrainsMono Nerd Font";
-      };
-      emoji = {
-        package = pkgs.noto-fonts-emoji;
-        name = "Noto Color Emoji";
-      };
-    };
-  };
-
-  virtualisation.libvirtd.enable = true;
-
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [
-    #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    #  wget
-  ];
+  # environment.systemPackages = with pkgs; [
+  #   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+  #   #  wget
+  # ];
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
