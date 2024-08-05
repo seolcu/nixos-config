@@ -23,6 +23,7 @@
     ../../nixosModules/fonts.nix
     ../../nixosModules/stylix.nix
     ../../nixosModules/virt-manager.nix
+    ../../nixosModules/gnupg.nix
   ];
 
   boot = {
@@ -115,10 +116,6 @@
     # Some programs need SUID wrappers, can be configured further or are
     # started in user sessions.
     # mtr.enable = true;
-    # gnupg.agent = {
-    #   enable = true;
-    #   enableSSHSupport = true;
-    # };
   };
 
   # Optional, hint electron apps to use wayland:

@@ -60,6 +60,7 @@
       nixfmt-rfc-style
       bottles
       papirus-icon-theme
+      kleopatra
     ];
 
     # Home Manager is pretty good at managing dotfiles. The primary way to manage
