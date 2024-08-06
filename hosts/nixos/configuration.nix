@@ -126,7 +126,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users."${username}" = {
     isNormalUser = true;
-    description = "설규원";
+    description = "Gyuwon Seol";
     extraGroups = [
       "networkmanager"
       "wheel"
