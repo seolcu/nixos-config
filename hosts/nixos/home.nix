@@ -132,7 +132,11 @@
     git = {
       enable = true;
       userEmail = "seolcu0112@proton.me";
-      userName = "seolcu";
+      userName = "Gyuwon Seol";
+      signing = {
+        key = null;
+        signByDefault = true;
+      };
     };
     gh = {
       enable = true;
