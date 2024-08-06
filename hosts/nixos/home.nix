@@ -68,7 +68,6 @@
       python312
       python312Packages.ipykernel
       python312Packages.black
-      black
       openjdk
       nodejs
       hugo
