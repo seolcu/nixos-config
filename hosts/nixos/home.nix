@@ -54,14 +54,24 @@
       # '')
       vscode
       element-desktop
-      gcc
       fragments
       nixd
       nixfmt-rfc-style
       bottles
-      papirus-icon-theme
       kleopatra
       protonvpn-gui
+      wget
+      distrobox
+
+      # Development tools
+      gcc
+      python312
+      python312Packages.ipykernel
+      python312Packages.black
+      black
+      openjdk
+      nodejs
+      hugo
     ];
 
     # Home Manager is pretty good at managing dotfiles. The primary way to manage
