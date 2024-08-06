@@ -15,13 +15,12 @@
         name = "JetBrainsMono Nerd Font";
       };
       sansSerif = {
-        package = pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; };
-        name = "JetBrainsMono Nerd Font";
+        package = pkgs.noto-fonts;
+        name = "Noto Sans";
       };
-      # List services that you want to enable:
       serif = {
-        package = pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; };
-        name = "JetBrainsMono Nerd Font";
+        package = pkgs.noto-fonts;
+        name = "Noto Serif";
       };
       emoji = {
         package = pkgs.noto-fonts-emoji;
