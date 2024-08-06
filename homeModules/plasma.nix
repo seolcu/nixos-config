@@ -1,4 +1,7 @@
 { pkgs, ... }:
 {
-  home.packages = with pkgs; [ kdePackages.kcalc ];
+  home.packages = with pkgs; [
+    kdePackages.kcalc
+    kdePackages.ktorrent
+  ];
 }

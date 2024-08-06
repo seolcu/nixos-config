@@ -54,7 +54,6 @@
       # '')
       vscode
       element-desktop
-      fragments
       nixd
       nixfmt-rfc-style
       bottles
@@ -62,6 +61,7 @@
       protonvpn-gui
       wget
       distrobox
+      vlc
 
       # Development tools
       gcc
