@@ -72,6 +72,7 @@
     };
     # Enable the OpenSSH daemon.
     # openssh.enable = true;
+    flatpak.enable = true;
   };
 
   networking = {
