@@ -4,4 +4,5 @@
     kdePackages.kcalc
     kdePackages.ktorrent
   ];
+  programs.kitty.enable = true;
 }
