@@ -51,7 +51,7 @@
       # # environment:
       # (writeShellScriptBin "my-hello" ''
       #   echo "Hello, ${config.home.username}!"
-      # '')
+      # '') 
       vscode
       element-desktop
       nixd
@@ -110,20 +110,20 @@
   };
 
   # Let Home Manager install and manage itself.
-  gtk = {
-    enable = true;
-    # iconTheme = {
-    #   package = pkgs.papirus-icon-theme;
-    #   name = "Papirus-Dark";
-    # };
-  };
-  qt = {
-    enable = true;
-    # style = {
-    #   package = pkgs.kdePackages.breeze;
-    #   name = "breeze";
-    # };
-  };
+  # gtk = {
+  #   enable = true;
+  #   # iconTheme = {
+  #   #   package = pkgs.papirus-icon-theme;
+  #   #   name = "Papirus-Dark";
+  #   # };
+  # };
+  # qt = {
+  #   enable = true;
+  #   # style = {
+  #   #   package = pkgs.kdePackages.breeze;
+  #   #   name = "breeze";
+  #   # };
+  # };
 
   programs = {
     home-manager.enable = true;
