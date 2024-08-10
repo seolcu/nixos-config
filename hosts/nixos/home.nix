@@ -54,6 +54,7 @@
       # '') 
       vscode
       element-desktop
+      discord
       nixd
       nixfmt-rfc-style
       bottles
