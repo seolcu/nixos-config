@@ -24,6 +24,7 @@
     ../../nixosModules/stylix.nix
     ../../nixosModules/virt-manager.nix
     ../../nixosModules/gnupg.nix
+    ../../nixosModules/docker.nix
   ];
 
   boot = {
@@ -133,6 +134,7 @@
       "networkmanager"
       "wheel"
       "libvirtd"
+      "docker"
     ];
     # packages = with pkgs; [ ];
   };
