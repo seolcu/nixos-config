@@ -55,6 +55,7 @@
       vscode
       element-desktop
       discord
+      onlyoffice-bin
       nixd
       nixfmt-rfc-style
       bottles
