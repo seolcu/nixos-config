@@ -64,6 +64,8 @@
       wget
       distrobox
       vlc
+      zoom-us
+      android-studio
 
       # Development tools
       gcc
