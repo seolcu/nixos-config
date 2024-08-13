@@ -66,6 +66,7 @@
       vlc
       zoom-us
       android-studio
+      ungoogled-chromium
 
       # Development tools
       gcc
