@@ -67,6 +67,8 @@
       zoom-us
       android-studio
       ungoogled-chromium
+      ida-free
+      ghidra
 
       # Development tools
       gcc
