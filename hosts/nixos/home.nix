@@ -75,6 +75,7 @@
       openjdk
       nodejs
       hugo
+      metasploit
     ];
 
     # Home Manager is pretty good at managing dotfiles. The primary way to manage
