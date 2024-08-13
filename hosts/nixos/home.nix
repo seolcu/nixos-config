@@ -157,5 +157,6 @@
     };
     cava.enable = true;
     mangohud.enable = true;
+    obs-studio.enable = true;
   };
 }
