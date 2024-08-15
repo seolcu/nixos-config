@@ -73,6 +73,7 @@
 
       # Development tools
       gcc
+      gdb
       python312
       python312Packages.ipykernel
       python312Packages.black
