@@ -70,6 +70,7 @@
       ida-free
       ghidra
       rpi-imager
+      file
 
       # Development tools
       gcc
