@@ -69,6 +69,7 @@
       ungoogled-chromium
       ida-free
       ghidra
+      rpi-imager
 
       # Development tools
       gcc
