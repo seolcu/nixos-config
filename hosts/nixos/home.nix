@@ -70,6 +70,7 @@
       ghidra
       rpi-imager
       file
+      mesa-demos
 
       # Development tools
       gcc
