@@ -25,7 +25,7 @@
     ../../nixosModules/virt-manager.nix
     ../../nixosModules/waydroid.nix
     ../../nixosModules/gnupg.nix
-    ../../nixosModules/docker.nix
+    ../../nixosModules/distrobox.nix
   ];
 
   boot = {
@@ -135,7 +135,6 @@
       "networkmanager"
       "wheel"
       "libvirtd"
-      "docker"
     ];
     # packages = with pkgs; [ ];
   };

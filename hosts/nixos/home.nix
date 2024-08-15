@@ -62,7 +62,6 @@
       kleopatra
       protonvpn-gui
       wget
-      distrobox
       vlc
       zoom-us
       android-studio
