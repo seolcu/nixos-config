@@ -85,6 +85,7 @@
       apktool
       dive
       steghide
+      snow
     ];
 
     # Home Manager is pretty good at managing dotfiles. The primary way to manage
