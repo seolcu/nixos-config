@@ -87,6 +87,14 @@
       steghide
       snow
       okteta
+      exiftool
+      binwalk
+      _7zz
+      fcrackzip
+      unzip
+      insomnia
+      postman
+      audacity
     ];
 
     # Home Manager is pretty good at managing dotfiles. The primary way to manage
