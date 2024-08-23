@@ -7,5 +7,6 @@
     gnomeExtensions.caffeine
     gnomeExtensions.vitals
     gnomeExtensions.thinkpad-battery-threshold
+    fragments
   ];
 }
