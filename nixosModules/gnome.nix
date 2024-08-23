@@ -9,10 +9,4 @@
     desktopManager.gnome.enable = true;
   };
   environment.gnome.excludePackages = [ pkgs.epiphany ];
-  stylix.fonts.sizes = {
-    applications = 11;
-    desktop = 11;
-    popups = 11;
-    terminal = 10;
-  };
 }

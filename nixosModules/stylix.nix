@@ -9,6 +9,12 @@
       name = "Bibata-Modern-Ice";
       size = 24;
     };
+    stylix.fonts.sizes = {
+      applications = 11;
+      desktop = 11;
+      popups = 11;
+      terminal = 11;
+    };
     fonts = {
       monospace = {
         package = pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; };

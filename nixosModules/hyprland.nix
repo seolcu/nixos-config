@@ -3,6 +3,7 @@
   imports = [
     ./tuigreet-hyprland.nix
     ./fcitx5.nix
+    ./stylix.nix
   ];
   services = {
     blueman.enable = true;

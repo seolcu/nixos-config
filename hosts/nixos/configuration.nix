@@ -21,7 +21,6 @@
     /etc/nixos/hardware-configuration.nix
 
     ../../nixosModules/fonts.nix
-    ../../nixosModules/stylix.nix
     ../../nixosModules/virt-manager.nix
     # ../../nixosModules/waydroid.nix
     ../../nixosModules/gnupg.nix
