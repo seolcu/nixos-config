@@ -65,7 +65,6 @@
       openjdk
       nodejs
       hugo
-      busybox
       nixd
       nixfmt-rfc-style
 
