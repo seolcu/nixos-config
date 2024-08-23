@@ -118,7 +118,6 @@
     # Some programs need SUID wrappers, can be configured further or are
     # started in user sessions.
     # mtr.enable = true;
-    kdeconnect.enable = true;
   };
 
   # Optional, hint electron apps to use wayland:

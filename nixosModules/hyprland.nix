@@ -4,6 +4,7 @@
     ./tuigreet-hyprland.nix
     ./fcitx5.nix
     ./stylix.nix
+    ./kdeconnect.nix
   ];
   services = {
     blueman.enable = true;
