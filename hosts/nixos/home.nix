@@ -52,27 +52,11 @@
       # (writeShellScriptBin "my-hello" ''
       #   echo "Hello, ${config.home.username}!"
       # '') 
-      vscode
-      element-desktop
-      discord
-      libreoffice-qt6
-      nixd
-      nixfmt-rfc-style
-      bottles
-      kleopatra
-      protonvpn-gui
-      wget
-      vlc
-      zoom-us
-      android-studio
-      ungoogled-chromium
-      ida-free
-      ghidra
-      rpi-imager
-      file
-      mesa-demos
 
       # Development tools
+
+      ## CLI tools
+
       gcc
       gdb
       python312
@@ -81,24 +65,74 @@
       openjdk
       nodejs
       hugo
+      busybox
+      nixd
+      nixfmt-rfc-style
+
+      ## GUI tools
+
+      vscode
+      android-studio
+      insomnia
+      postman
+
+      # Hacking tools
+
+      ## CLI tools
+
       metasploit
       apktool
       dive
       steghide
       snow
-      okteta
       exiftool
       binwalk
       _7zz
       fcrackzip
-      unzip
-      insomnia
-      postman
-      audacity
       zsteg
+
+      ## GUI tools
+
+      ida-free
+      ghidra
+      okteta
+
+      # Communication tools
+
+      element-desktop
+      discord
+      zoom-us
+
+      # Multimedia tools
+
+      audacity
+      vlc
+
+      # Internet
+
+      protonvpn-gui
+      ungoogled-chromium
+
+      # Office
+
+      libreoffice-qt6
       obsidian
-      busybox
+
+      # Etc.
+
+      ## CLI
+
+      mesa-demos
+      unzip
       openssl
+      file
+      wget
+
+      ## GUI
+
+      bottles
+      kleopatra
+      rpi-imager
     ];
 
     # Home Manager is pretty good at managing dotfiles. The primary way to manage
