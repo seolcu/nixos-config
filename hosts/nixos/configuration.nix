@@ -23,7 +23,7 @@
     ../../nixosModules/fonts.nix
     ../../nixosModules/stylix.nix
     ../../nixosModules/virt-manager.nix
-    ../../nixosModules/waydroid.nix
+    # ../../nixosModules/waydroid.nix
     ../../nixosModules/gnupg.nix
     ../../nixosModules/distrobox.nix
   ];
