@@ -131,7 +131,6 @@
       ## GUI
 
       bottles
-      kleopatra
       rpi-imager
     ];
 
