@@ -8,5 +8,8 @@
     displayManager.gdm.enable = true;
     desktopManager.gnome.enable = true;
   };
-  environment.gnome.excludePackages = [ pkgs.epiphany ];
+  environment.gnome.excludePackages = [
+    pkgs.epiphany
+    pkgs.geary
+  ];
 }
