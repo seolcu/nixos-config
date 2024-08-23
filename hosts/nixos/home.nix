@@ -114,7 +114,7 @@
 
       # Office
 
-      libreoffice-qt6
+      libreoffice
       obsidian
 
       # Etc.
