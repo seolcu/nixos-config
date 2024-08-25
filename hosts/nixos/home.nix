@@ -104,7 +104,6 @@
       # Internet
 
       protonvpn-gui
-      ungoogled-chromium
 
       # Office
 
