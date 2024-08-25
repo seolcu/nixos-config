@@ -4,5 +4,6 @@
     kdePackages.kcalc
     kdePackages.ktorrent
     kleopatra
+    libreoffice-qt6
   ];
 }

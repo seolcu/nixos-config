@@ -114,7 +114,6 @@
 
       # Office
 
-      libreoffice
       obsidian
 
       # Etc.

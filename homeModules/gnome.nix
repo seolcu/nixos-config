@@ -8,5 +8,6 @@
     gnomeExtensions.vitals
     gnomeExtensions.thinkpad-battery-threshold
     fragments
+    libreoffice
   ];
 }
