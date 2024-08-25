@@ -7,8 +7,8 @@
   imports = [
     # Desktop environment modules
     # ../../nixosModules/hyprland.nix
-    # ../../nixosModules/plasma.nix
-    ../../nixosModules/gnome.nix
+    ../../nixosModules/plasma.nix
+    # ../../nixosModules/gnome.nix
 
     # Include the results of the hardware scan. `--impure` option is required.
     /etc/nixos/hardware-configuration.nix
