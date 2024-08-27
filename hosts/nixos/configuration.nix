@@ -20,7 +20,7 @@
 
     ../../nixosModules/fonts.nix
     ../../nixosModules/virt-manager.nix
-    ../../nixosModules/virtualbox.nix
+    # ../../nixosModules/virtualbox.nix
     # ../../nixosModules/waydroid.nix
     ../../nixosModules/gnupg.nix
     ../../nixosModules/distrobox.nix
