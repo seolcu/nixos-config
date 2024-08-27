@@ -2,7 +2,12 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ host, username, ... }:
+{
+  host,
+  username,
+  pkgs,
+  ...
+}:
 {
   imports = [
     # Desktop environment modules
@@ -27,7 +32,11 @@
       efi.canTouchEfiVariables = true;
     };
     plymouth.enable = true;
+    kernelPackages = pkgs.linuxPackages_cachyos;
   };
+
+  # Needed to use cachyos kernel
+  chaotic.scx.enable = true; # by default uses scx_rustland scheduler
 
   hardware = {
     bluetooth = {
