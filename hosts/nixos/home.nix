@@ -118,8 +118,6 @@
       openssl
       file
       wget
-      quickemu
-      quickgui
 
       ## GUI
 
