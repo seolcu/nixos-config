@@ -115,6 +115,7 @@
       openssl
       file
       wget
+      pciutils
 
       ## GUI
 
