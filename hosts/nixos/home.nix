@@ -119,6 +119,7 @@
       file
       wget
       quickemu
+      quickgui
 
       ## GUI
 
