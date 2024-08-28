@@ -111,7 +111,6 @@
 
       ## CLI
 
-      mesa-demos
       unzip
       openssl
       file
