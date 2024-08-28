@@ -66,8 +66,6 @@
 
       vscode
       android-studio
-      insomnia
-      postman
 
       # Hacking tools
 
