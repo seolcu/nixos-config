@@ -118,6 +118,7 @@
       openssl
       file
       wget
+      quickemu
 
       ## GUI
 
