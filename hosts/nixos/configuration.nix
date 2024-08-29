@@ -6,7 +6,6 @@
   host,
   username,
   pkgs,
-  config,
   ...
 }:
 {
