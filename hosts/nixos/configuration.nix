@@ -6,6 +6,7 @@
   host,
   username,
   pkgs,
+  config,
   ...
 }:
 {
@@ -60,6 +61,18 @@
     # libinput.enable = true;
     # Enable CUPS to print documents.
     printing.enable = true;
+
+    # Avahi for mDNS support (network host discovery)
+    avahi = {
+      enable = true;
+      nssmdns4 = true;
+      openFirewall = true;
+      publish = {
+        enable = true;
+        userServices = true;
+      };
+    };
+
     pipewire = {
       enable = true;
       alsa = {
