@@ -81,6 +81,8 @@
       _7zz
       fcrackzip
       zsteg
+      pwndbg
+      pwntools
 
       ## GUI tools
 
