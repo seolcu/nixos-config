@@ -124,6 +124,7 @@
       bottles
       rpi-imager
       prismlauncher
+      gnome-disk-utility
     ];
 
     # Home Manager is pretty good at managing dotfiles. The primary way to manage
