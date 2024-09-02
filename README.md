@@ -11,5 +11,5 @@ My personal NixOS configuration flake.
 ```sh
 nix-shell -p git
 git clone https://github.com/seolcu/nixos-config ~/nixos-config
-sudo nixos-rebuild switch --flake ~/nixos-config --impure
+sudo nixos-rebuild switch --flake ~/nixos-config --impure --upgrade
 ```
