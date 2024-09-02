@@ -18,6 +18,7 @@
     # Include the results of the hardware scan. `--impure` option is required.
     /etc/nixos/hardware-configuration.nix
 
+    ../../nixosModules/home-manager.nix
     ../../nixosModules/fonts.nix
     ../../nixosModules/virt-manager.nix
     # ../../nixosModules/virtualbox.nix

@@ -17,8 +17,6 @@
   outputs =
     {
       nixpkgs,
-      chaotic,
-      home-manager,
       ...
     }@inputs:
     let
@@ -37,22 +35,9 @@
           };
           modules = [
             ./hosts/${host}/configuration.nix
-            chaotic.nixosModules.default
+            inputs.chaotic.nixosModules.default
             inputs.stylix.nixosModules.stylix
-            home-manager.nixosModules.home-manager
-            {
-              home-manager = {
-                extraSpecialArgs = {
-                  inherit username;
-                  inherit inputs;
-                  inherit host;
-                };
-                useGlobalPkgs = true;
-                useUserPackages = true;
-                # backupFileExtension = "backup";
-                users.${username} = import ./hosts/${host}/home.nix;
-              };
-            }
+            inputs.home-manager.nixosModules.home-manager
           ];
         };
       };
