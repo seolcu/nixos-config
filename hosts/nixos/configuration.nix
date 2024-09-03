@@ -50,6 +50,7 @@
 
     # Environment
     ../../nixosModules/interactiveShellInit.nix
+    ../../nixosModules/sessionVariables.nix
 
     # Etc
     ../../nixosModules/users.nix
@@ -57,9 +58,6 @@
     ../../nixosModules/timezone.nix
     ../../nixosModules/nix-config.nix
   ];
-
-  # Optional, hint electron apps to use wayland:
-  # environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
