@@ -34,6 +34,7 @@
     ../../nixosModules/avahi.nix
     ../../nixosModules/power-profiles-daemon.nix
     ../../nixosModules/pipewire.nix
+    ../../nixosModules/cups.nix
   ];
 
   services = {
@@ -46,8 +47,6 @@
     };
     # Enable touchpad support (enabled default in most desktopManager).
     # libinput.enable = true;
-    # Enable CUPS to print documents.
-    printing.enable = true;
 
     # Enable the OpenSSH daemon.
     # openssh.enable = true;
