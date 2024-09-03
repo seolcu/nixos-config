@@ -34,9 +34,7 @@
     ./locale.nix
 
     # Programs
-    ./gnupg.nix
-    ./firefox.nix
-    ./steam.nix
+    ./programs
 
     # Virtualisation
     ./virt-manager.nix
