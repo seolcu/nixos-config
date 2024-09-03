@@ -37,10 +37,7 @@
     ./programs
 
     # Virtualisation
-    ./virt-manager.nix
-    # ./virtualbox.nix
-    # ./waydroid.nix
-    ./distrobox.nix
+    ./virtualisation
 
     # Environment
     ./interactiveShellInit.nix
