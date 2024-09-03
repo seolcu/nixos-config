@@ -33,6 +33,7 @@
           };
           modules = [
             ./hosts/nixos/configuration.nix
+            ./nixosModules
             inputs.chaotic.nixosModules.default
             inputs.stylix.nixosModules.stylix
             inputs.home-manager.nixosModules.home-manager
