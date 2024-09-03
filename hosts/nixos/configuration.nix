@@ -2,10 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{
-  username,
-  ...
-}:
+{ ... }:
 {
   imports = [
     # Desktop environment modules
@@ -47,6 +44,9 @@
     # i18n
     ../../nixosModules/locale.nix
 
+    # Users
+    ../../nixosModules/users.nix
+
     # Nix config
     ../../nixosModules/nix-config.nix
   ];
@@ -67,19 +67,6 @@
 
   # Optional, hint electron apps to use wayland:
   # environment.sessionVariables.NIXOS_OZONE_WL = "1";
-
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users."${username}" = {
-    isNormalUser = true;
-    description = "Gyuwon Seol";
-    extraGroups = [
-      "networkmanager"
-      "wheel"
-      "libvirtd"
-      "vboxusers"
-    ];
-    # packages = with pkgs; [ ];
-  };
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
