@@ -42,6 +42,7 @@
     # Networking
     ../../nixosModules/firewall.nix
     ../../nixosModules/hostname.nix
+    ../../nixosModules/networkmanager.nix
 
     # Nix config
     ../../nixosModules/nix-config.nix
@@ -50,10 +51,6 @@
   services = {
     # Enable touchpad support (enabled default in most desktopManager).
     # libinput.enable = true;
-  };
-
-  networking = {
-    networkmanager.enable = true;
   };
 
   time.timeZone = "Asia/Seoul";
