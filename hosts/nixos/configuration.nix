@@ -41,6 +41,7 @@
 
     # Networking
     ../../nixosModules/firewall.nix
+    ../../nixosModules/hostname.nix
 
     # Nix config
     ../../nixosModules/nix-config.nix
@@ -52,7 +53,6 @@
   };
 
   networking = {
-    hostName = "nixos";
     networkmanager.enable = true;
   };
 
