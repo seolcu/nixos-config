@@ -21,23 +21,33 @@
     }@inputs:
     let
       system = "x86_64-linux";
-      host = "nixos";
       username = "seolcu";
     in
     {
       nixosConfigurations = {
-        "${host}" = nixpkgs.lib.nixosSystem {
+        nixos = nixpkgs.lib.nixosSystem {
           specialArgs = {
             inherit system;
             inherit inputs;
             inherit username;
-            inherit host;
           };
           modules = [
-            ./hosts/${host}/configuration.nix
+            ./hosts/nixos/configuration.nix
             inputs.chaotic.nixosModules.default
             inputs.stylix.nixosModules.stylix
             inputs.home-manager.nixosModules.home-manager
+            {
+              home-manager = {
+                extraSpecialArgs = {
+                  inherit inputs;
+                  inherit username;
+                };
+                useGlobalPkgs = true;
+                useUserPackages = true;
+                # backupFileExtension = "backup";
+                users.${username} = import ./hosts/nixos/home.nix;
+              };
+            }
           ];
         };
       };
