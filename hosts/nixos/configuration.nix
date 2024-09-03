@@ -40,6 +40,7 @@
     # Programs
     ../../nixosModules/gnupg.nix
     ../../nixosModules/firefox.nix
+    ../../nixosModules/steam.nix
 
     # Virtualisation
     ../../nixosModules/virt-manager.nix
@@ -53,18 +54,6 @@
     ../../nixosModules/timezone.nix
     ../../nixosModules/nix-config.nix
   ];
-
-  programs = {
-
-    steam = {
-      enable = true;
-      gamescopeSession.enable = true;
-    };
-    gamemode.enable = true;
-    # Some programs need SUID wrappers, can be configured further or are
-    # started in user sessions.
-    # mtr.enable = true;
-  };
 
   # Optional, hint electron apps to use wayland:
   # environment.sessionVariables.NIXOS_OZONE_WL = "1";
