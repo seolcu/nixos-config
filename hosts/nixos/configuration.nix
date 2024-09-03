@@ -41,6 +41,9 @@
 
     # Networking
     ../../nixosModules/firewall.nix
+
+    # Nix config
+    ../../nixosModules/nix-config.nix
   ];
 
   services = {
@@ -52,11 +55,6 @@
     hostName = "nixos";
     networkmanager.enable = true;
   };
-
-  nix.settings.experimental-features = [
-    "nix-command"
-    "flakes"
-  ];
 
   time.timeZone = "Asia/Seoul";
 
@@ -104,9 +102,6 @@
     ];
     # packages = with pkgs; [ ];
   };
-
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
