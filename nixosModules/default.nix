@@ -1,13 +1,11 @@
-{ ... }:
+{ lib, config, ... }:
 {
   imports = [
     # Include the results of the hardware scan. `--impure` option is required.
     /etc/nixos/hardware-configuration.nix
 
     # Desktop
-    # ./hyprland.nix
-    ./plasma.nix
-    # ./gnome.nix
+    ./desktop
 
     # Boot
     ./cachyos-kernel.nix
@@ -27,11 +25,10 @@
 
     # Networking
     ./firewall.nix
-    ./hostname.nix
     ./networkmanager.nix
 
     # i18n
-    ./locale.nix
+    ./i18n
 
     # Programs
     ./programs
@@ -49,6 +46,12 @@
     ./fonts.nix
     ./timezone.nix
     ./nix-config.nix
+    ./stylix.nix
+    ./tuigreet-hyprland.nix
     ./stateVersion.nix
   ];
+
+  myNixOS = {
+    tuigreet-hyprland.enable = lib.mkIf config.myNixOS.desktop.hyprland.enable true;
+  };
 }

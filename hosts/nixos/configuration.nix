@@ -4,5 +4,6 @@
 
 { ... }:
 {
-
+  myNixOS.desktop.plasma.enable = true;
+  networking.hostName = "nixos";
 }
