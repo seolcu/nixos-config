@@ -1,8 +1,8 @@
 { ... }:
 {
   imports = [
-    ./gnupg.nix
     ./firefox.nix
+    ./gnupg.nix
     ./steam.nix
   ];
 }
