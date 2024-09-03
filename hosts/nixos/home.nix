@@ -118,6 +118,7 @@
       file
       wget
       pciutils
+      quickemu
 
       ## GUI
 
