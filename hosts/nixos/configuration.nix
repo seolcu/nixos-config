@@ -38,6 +38,9 @@
     ../../nixosModules/keymap.nix
     ../../nixosModules/sshd.nix
     ../../nixosModules/flatpak.nix
+
+    # Networking
+    ../../nixosModules/firewall.nix
   ];
 
   services = {
@@ -48,11 +51,6 @@
   networking = {
     hostName = "nixos";
     networkmanager.enable = true;
-    # Open ports in the firewall.
-    # firewall.allowedTCPPorts = [ ... ];
-    # firewall.allowedUDPPorts = [ ... ];
-    # Or disable the firewall altogether.
-    firewall.enable = false;
   };
 
   nix.settings.experimental-features = [
