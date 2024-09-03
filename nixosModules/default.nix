@@ -11,15 +11,7 @@
     ./boot
 
     # Services
-    ./bluetooth.nix
-    ./avahi.nix
-    ./power-profiles-daemon.nix
-    ./pipewire.nix
-    ./cups.nix
-    ./keymap.nix
-    ./sshd.nix
-    ./flatpak.nix
-    ./libinput.nix
+    ./services
 
     # Networking
     ./firewall.nix

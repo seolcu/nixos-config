@@ -1,4 +1,4 @@
-{ lib, ... }:
+{ lib, config, ... }:
 {
   imports = [
     ./distrobox.nix
@@ -8,8 +8,8 @@
   ];
 
   myNixOS.virtualisation = {
-    distrobox.enable = lib.mkDefault true;
-    virt-manager.enable = lib.mkDefault true;
+    distrobox.enable = lib.mkIf config.myNixOS.desktop.enable true;
+    virt-manager.enable = lib.mkIf config.myNixOS.desktop.enable true;
     virtualbox.enable = lib.mkDefault false;
     waydroid.enable = lib.mkDefault false;
   };

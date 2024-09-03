@@ -6,7 +6,6 @@
 {
   myNixOS = {
     desktop.plasma.enable = true;
-    boot.cachyos-kernel.enable = true;
   };
   networking.hostName = "nixos";
 }

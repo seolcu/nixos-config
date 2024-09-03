@@ -6,9 +6,8 @@
     ./gnome.nix
   ];
 
-  myNixOS.desktop = {
-    hyprland.enable = lib.mkDefault false;
-    plasma.enable = lib.mkDefault false;
-    gnome.enable = lib.mkDefault false;
+  options = {
+    # automatically enabled if any desktop is enabled
+    myNixOS.desktop.enable = lib.mkEnableOption "Enable desktop environment";
   };
 }

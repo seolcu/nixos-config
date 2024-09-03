@@ -15,5 +15,6 @@
     programs = {
       nm-applet.enable = true;
     };
+    myNixOS.desktop.enable = true;
   };
 }

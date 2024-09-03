@@ -21,5 +21,6 @@
       pkgs.epiphany
       pkgs.geary
     ];
+    myNixOS.desktop.enable = true;
   };
 }

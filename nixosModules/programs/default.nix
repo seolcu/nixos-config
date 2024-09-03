@@ -8,8 +8,10 @@
   ];
 
   myNixOS.programs = {
+    firefox.enable = lib.mkIf config.myNixOS.desktop.enable true;
     kdeconnect.enable = lib.mkIf (
       config.myNixOS.desktop.hyprland.enable || config.myNixOS.desktop.plasma.enable
     ) true;
+    steam.enable = lib.mkIf config.myNixOS.desktop.enable true;
   };
 }

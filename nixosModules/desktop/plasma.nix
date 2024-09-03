@@ -12,5 +12,6 @@
       };
       desktopManager.plasma6.enable = true;
     };
+    myNixOS.desktop.enable = true;
   };
 }
