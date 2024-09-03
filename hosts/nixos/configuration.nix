@@ -25,6 +25,7 @@
     ../../nixosModules/distrobox.nix
 
     ../../nixosModules/avahi.nix
+    ../../nixosModules/cachyos-kernel.nix
   ];
 
   boot = {
@@ -33,11 +34,7 @@
       efi.canTouchEfiVariables = true;
     };
     plymouth.enable = true;
-    kernelPackages = pkgs.linuxPackages_cachyos;
   };
-
-  # Needed to use cachyos kernel
-  chaotic.scx.enable = true; # by default uses scx_rustland scheduler
 
   hardware = {
     bluetooth = {
