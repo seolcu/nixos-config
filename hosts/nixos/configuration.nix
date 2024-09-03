@@ -26,13 +26,10 @@
 
     ../../nixosModules/avahi.nix
     ../../nixosModules/cachyos-kernel.nix
+    ../../nixosModules/systemd-boot.nix
   ];
 
   boot = {
-    loader = {
-      systemd-boot.enable = true;
-      efi.canTouchEfiVariables = true;
-    };
     plymouth.enable = true;
   };
 
