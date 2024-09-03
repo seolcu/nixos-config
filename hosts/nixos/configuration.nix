@@ -35,16 +35,10 @@
     ../../nixosModules/power-profiles-daemon.nix
     ../../nixosModules/pipewire.nix
     ../../nixosModules/cups.nix
+    ../../nixosModules/keymap.nix
   ];
 
   services = {
-    # Configure keymap in X11
-    xserver = {
-      xkb = {
-        layout = "kr";
-        variant = "kr104";
-      };
-    };
     # Enable touchpad support (enabled default in most desktopManager).
     # libinput.enable = true;
 
