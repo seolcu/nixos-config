@@ -48,10 +48,12 @@
     # ../../nixosModules/waydroid.nix
     ../../nixosModules/distrobox.nix
 
+    # Environment
+    ../../nixosModules/interactiveShellInit.nix
+
     # Etc
     ../../nixosModules/users.nix
     ../../nixosModules/fonts.nix
-    ../../nixosModules/shell-init.nix
     ../../nixosModules/timezone.nix
     ../../nixosModules/nix-config.nix
   ];
