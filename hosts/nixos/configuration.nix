@@ -36,14 +36,13 @@
     ../../nixosModules/pipewire.nix
     ../../nixosModules/cups.nix
     ../../nixosModules/keymap.nix
+    ../../nixosModules/sshd.nix
   ];
 
   services = {
     # Enable touchpad support (enabled default in most desktopManager).
     # libinput.enable = true;
 
-    # Enable the OpenSSH daemon.
-    openssh.enable = true;
     flatpak.enable = true;
   };
 
