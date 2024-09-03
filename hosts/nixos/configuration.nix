@@ -39,6 +39,7 @@
 
     # Programs
     ../../nixosModules/gnupg.nix
+    ../../nixosModules/firefox.nix
 
     # Virtualisation
     ../../nixosModules/virt-manager.nix
@@ -54,7 +55,7 @@
   ];
 
   programs = {
-    firefox.enable = true;
+
     steam = {
       enable = true;
       gamescopeSession.enable = true;
