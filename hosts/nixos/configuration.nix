@@ -5,20 +5,13 @@
 { ... }:
 {
   imports = [
-    # Desktop environment modules
-    # ../../nixosModules/hyprland.nix
-    ../../nixosModules/plasma.nix
-    # ../../nixosModules/gnome.nix
-
     # Include the results of the hardware scan. `--impure` option is required.
     /etc/nixos/hardware-configuration.nix
 
-    ../../nixosModules/fonts.nix
-    ../../nixosModules/virt-manager.nix
-    # ../../nixosModules/virtualbox.nix
-    # ../../nixosModules/waydroid.nix
-    ../../nixosModules/gnupg.nix
-    ../../nixosModules/distrobox.nix
+    # Desktop
+    # ../../nixosModules/hyprland.nix
+    ../../nixosModules/plasma.nix
+    # ../../nixosModules/gnome.nix
 
     # Boot
     ../../nixosModules/cachyos-kernel.nix
@@ -46,6 +39,18 @@
 
     # Users
     ../../nixosModules/users.nix
+
+    # Fonts
+    ../../nixosModules/fonts.nix
+
+    # Programs
+    ../../nixosModules/gnupg.nix
+
+    # Virtualisation
+    ../../nixosModules/virt-manager.nix
+    # ../../nixosModules/virtualbox.nix
+    # ../../nixosModules/waydroid.nix
+    ../../nixosModules/distrobox.nix
 
     # Nix config
     ../../nixosModules/nix-config.nix
