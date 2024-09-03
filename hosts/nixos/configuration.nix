@@ -24,10 +24,14 @@
     ../../nixosModules/gnupg.nix
     ../../nixosModules/distrobox.nix
 
-    ../../nixosModules/avahi.nix
+    # Boot
     ../../nixosModules/cachyos-kernel.nix
     ../../nixosModules/systemd-boot.nix
     ../../nixosModules/plymouth.nix
+
+    # Services
+    ../../nixosModules/avahi.nix
+    ../../nixosModules/power-profiles-daemon.nix
   ];
 
   hardware = {
@@ -40,7 +44,6 @@
   };
 
   services = {
-    power-profiles-daemon.enable = true;
     # Configure keymap in X11
     xserver = {
       xkb = {
