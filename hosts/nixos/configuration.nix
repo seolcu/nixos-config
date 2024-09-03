@@ -30,15 +30,12 @@
     ../../nixosModules/plymouth.nix
 
     # Services
+    ../../nixosModules/bluetooth.nix
     ../../nixosModules/avahi.nix
     ../../nixosModules/power-profiles-daemon.nix
   ];
 
   hardware = {
-    bluetooth = {
-      enable = true; # enables support for Bluetooth
-      powerOnBoot = true; # powers up the default Bluetooth controller on boot
-    };
     # Enable sound with pipewire.
     pulseaudio.enable = false;
   };
