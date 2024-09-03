@@ -51,6 +51,7 @@
     # Environment
     ../../nixosModules/interactiveShellInit.nix
     ../../nixosModules/sessionVariables.nix
+    ../../nixosModules/systemPackages.nix
 
     # Etc
     ../../nixosModules/users.nix
@@ -58,13 +59,6 @@
     ../../nixosModules/timezone.nix
     ../../nixosModules/nix-config.nix
   ];
-
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
-  # environment.systemPackages = with pkgs; [
-  #   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-  #   #  wget
-  # ];
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
