@@ -43,7 +43,7 @@
     # libinput.enable = true;
 
     # Enable the OpenSSH daemon.
-    # openssh.enable = true;
+    openssh.enable = true;
     flatpak.enable = true;
   };
 
