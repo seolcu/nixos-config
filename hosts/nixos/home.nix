@@ -207,6 +207,11 @@
         key = null;
         signByDefault = true;
       };
+      extraConfig = {
+        push = {
+          autoSetupRemote = true;
+        };
+      };
     };
     gh = {
       enable = true;
