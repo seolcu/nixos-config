@@ -8,9 +8,7 @@
     ./desktop
 
     # Boot
-    ./cachyos-kernel.nix
-    ./systemd-boot.nix
-    ./plymouth.nix
+    ./boot
 
     # Services
     ./bluetooth.nix
