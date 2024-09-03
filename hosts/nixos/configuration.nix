@@ -27,11 +27,8 @@
     ../../nixosModules/avahi.nix
     ../../nixosModules/cachyos-kernel.nix
     ../../nixosModules/systemd-boot.nix
+    ../../nixosModules/plymouth.nix
   ];
-
-  boot = {
-    plymouth.enable = true;
-  };
 
   hardware = {
     bluetooth = {
