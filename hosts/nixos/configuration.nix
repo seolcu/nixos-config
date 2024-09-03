@@ -51,6 +51,7 @@
     # Etc
     ../../nixosModules/users.nix
     ../../nixosModules/fonts.nix
+    ../../nixosModules/shell-init.nix
     ../../nixosModules/timezone.nix
     ../../nixosModules/nix-config.nix
   ];
@@ -64,11 +65,6 @@
   #   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #   #  wget
   # ];
-
-  # Shell aliases
-  environment.interactiveShellInit = ''
-    alias up='sudo nixos-rebuild switch --flake ~/nixos-config --impure --upgrade'
-  '';
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
