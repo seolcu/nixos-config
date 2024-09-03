@@ -37,12 +37,6 @@
     # i18n
     ../../nixosModules/locale.nix
 
-    # Users
-    ../../nixosModules/users.nix
-
-    # Fonts
-    ../../nixosModules/fonts.nix
-
     # Programs
     ../../nixosModules/gnupg.nix
 
@@ -52,11 +46,12 @@
     # ../../nixosModules/waydroid.nix
     ../../nixosModules/distrobox.nix
 
-    # Nix config
+    # Etc
+    ../../nixosModules/users.nix
+    ../../nixosModules/fonts.nix
+    ../../nixosModules/timezone.nix
     ../../nixosModules/nix-config.nix
   ];
-
-  time.timeZone = "Asia/Seoul";
 
   programs = {
     firefox.enable = true;
