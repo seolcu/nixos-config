@@ -37,13 +37,12 @@
     ../../nixosModules/cups.nix
     ../../nixosModules/keymap.nix
     ../../nixosModules/sshd.nix
+    ../../nixosModules/flatpak.nix
   ];
 
   services = {
     # Enable touchpad support (enabled default in most desktopManager).
     # libinput.enable = true;
-
-    flatpak.enable = true;
   };
 
   networking = {
