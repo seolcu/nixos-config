@@ -1,4 +1,9 @@
-{ lib, config, ... }:
+{
+  lib,
+  config,
+  username,
+  ...
+}:
 {
   options = {
     myNixOS.virtualisation.virtualbox.enable = lib.mkEnableOption "Enable VirtualBox";
@@ -15,5 +20,9 @@
         dragAndDrop = true;
       };
     };
+
+    users.users."${username}".extraGroups = [
+      "vboxusers"
+    ];
   };
 }

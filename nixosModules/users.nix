@@ -5,10 +5,7 @@
     isNormalUser = true;
     description = "Gyuwon Seol";
     extraGroups = [
-      "networkmanager"
       "wheel"
-      "libvirtd"
-      "vboxusers"
     ];
     # packages = with pkgs; [ ];
   };

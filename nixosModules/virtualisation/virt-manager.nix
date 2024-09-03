@@ -2,6 +2,7 @@
   pkgs,
   lib,
   config,
+  username,
   ...
 }:
 {
@@ -31,5 +32,9 @@
 
     # For nested virtualization
     boot.extraModprobeConfig = "options kvm_intel nested=1";
+
+    users.users."${username}".extraGroups = [
+      "libvirtd"
+    ];
   };
 }
