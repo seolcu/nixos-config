@@ -26,9 +26,7 @@
     ./virtualisation
 
     # Environment
-    ./interactiveShellInit.nix
-    ./sessionVariables.nix
-    ./systemPackages.nix
+    ./environment
 
     # Etc
     ./users.nix
