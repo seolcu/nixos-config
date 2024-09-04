@@ -46,7 +46,12 @@
                 useGlobalPkgs = true;
                 useUserPackages = true;
                 # backupFileExtension = "backup";
-                users.${username} = import ./hosts/nixos/home.nix;
+                users.${username} = {
+                  imports = [
+                    ./hosts/nixos/home.nix
+                    ./homeModules
+                  ];
+                };
               };
             }
           ];

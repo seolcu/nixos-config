@@ -7,10 +7,10 @@
 }:
 {
   options = {
-    myNixOS.tuigreet-hyprland.enable = lib.mkEnableOption "Enable tuigreet";
+    myNixOS.services.tuigreet-hyprland.enable = lib.mkEnableOption "Enable tuigreet";
   };
 
-  config = lib.mkIf config.myNixOS.tuigreet-hyprland.enable {
+  config = lib.mkIf config.myNixOS.services.tuigreet-hyprland.enable {
     services.greetd = {
       enable = true;
       vt = 3; # Use tty7 for the greetd to get rid of the boot messages.
