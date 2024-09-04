@@ -48,6 +48,7 @@
       python312
       python312Packages.ipykernel
       python312Packages.black
+      python312Packages.pwntools
       openjdk
       nodejs
       hugo
@@ -74,7 +75,6 @@
       fcrackzip
       zsteg
       pwndbg
-      pwntools
 
       ## GUI tools
 
