@@ -17,10 +17,13 @@
       displayManager.gdm.enable = true;
       desktopManager.gnome.enable = true;
     };
-    environment.gnome.excludePackages = [
-      pkgs.epiphany
-      pkgs.geary
+    environment.gnome.excludePackages = with pkgs; [
+      epiphany
+      geary
     ];
-    myNixOS.desktop.enable = true;
+
+    myNixOS = {
+      i18n.ibus.enable = lib.mkDefault true;
+    };
   };
 }

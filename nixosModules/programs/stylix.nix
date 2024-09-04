@@ -6,10 +6,10 @@
 }:
 {
   options = {
-    myNixOS.desktop.stylix.enable = lib.mkEnableOption "Enable Stylix";
+    myNixOS.programs.stylix.enable = lib.mkEnableOption "Enable Stylix";
   };
 
-  config = lib.mkIf config.myNixOS.desktop.stylix.enable {
+  config = lib.mkIf config.myNixOS.programs.stylix.enable {
     stylix = {
       enable = true;
       base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";

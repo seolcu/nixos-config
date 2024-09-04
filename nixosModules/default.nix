@@ -4,36 +4,38 @@
     # Include the results of the hardware scan. `--impure` option is required.
     /etc/nixos/hardware-configuration.nix
 
-    # Desktop
-    ./desktop
-
     # Boot
     ./boot
 
-    # Services
-    ./services
+    # Desktop
+    ./desktop
 
-    # Networking
-    ./networking
+    # Environment
+    ./environment
 
     # i18n
     ./i18n
 
+    # Networking
+    ./networking
+
+    # Presets
+    ./presets
+
     # Programs
     ./programs
 
+    # Services
+    ./services
+
     # Virtualisation
     ./virtualisation
-
-    # Environment
-    ./environment
 
     # Etc
     ./users.nix
     ./fonts.nix
     ./timezone.nix
     ./nix-config.nix
-    ./stylix.nix
     ./stateVersion.nix
   ];
 }

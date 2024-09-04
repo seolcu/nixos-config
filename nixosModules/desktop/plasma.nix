@@ -12,6 +12,10 @@
       };
       desktopManager.plasma6.enable = true;
     };
-    myNixOS.desktop.enable = true;
+
+    myNixOS = {
+      i18n.fcitx5.enable = lib.mkDefault true;
+      programs.kdeconnect.enable = lib.mkDefault true;
+    };
   };
 }

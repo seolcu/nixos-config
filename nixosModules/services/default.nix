@@ -1,4 +1,4 @@
-{ lib, config, ... }:
+{ ... }:
 {
   imports = [
     ./avahi.nix
@@ -12,14 +12,4 @@
     ./sshd.nix
     ./tuigreet-hyprland.nix
   ];
-
-  myNixOS.services = {
-    bluetooth.enable = lib.mkIf config.myNixOS.desktop.enable true;
-    cups.enable = lib.mkIf config.myNixOS.desktop.enable true;
-    flatpak.enable = lib.mkIf config.myNixOS.desktop.enable true;
-    libinput.enable = lib.mkIf config.myNixOS.desktop.enable true;
-    pipewire.enable = lib.mkIf config.myNixOS.desktop.enable true;
-    power-profiles-daemon.enable = lib.mkIf config.myNixOS.desktop.enable true;
-    tuigreet-hyprland.enable = lib.mkIf config.myNixOS.desktop.hyprland.enable true;
-  };
 }

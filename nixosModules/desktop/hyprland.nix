@@ -15,6 +15,14 @@
     programs = {
       nm-applet.enable = true;
     };
-    myNixOS.desktop.enable = true;
+
+    myNixOS = {
+      i18n.fcitx5.enable = lib.mkDefault true;
+      programs = {
+        kdeconnect.enable = lib.mkDefault true;
+        stylix.enable = lib.mkDefault true;
+      };
+      services.tuigreet-hyprland.enable = lib.mkDefault true;
+    };
   };
 }

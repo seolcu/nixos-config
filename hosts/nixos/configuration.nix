@@ -5,7 +5,7 @@
 { ... }:
 {
   myNixOS = {
-    desktop.plasma.enable = true;
+    presets.desktop.enable = true;
   };
 
   networking.hostName = "nixos";
