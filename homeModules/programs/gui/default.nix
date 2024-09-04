@@ -1,14 +1,11 @@
 { pkgs, ... }:
 {
   imports = [
-    ./communication.nix
-    ./hacking.nix
     ./imv.nix
     ./kitty.nix
     ./mangohud.nix
     ./mpv.nix
     ./obs-studio.nix
-    ./protonvpn-gui.nix
     ./rofi-wayland.nix
     ./swaylock.nix
     ./waybar.nix
