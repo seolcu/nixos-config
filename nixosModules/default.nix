@@ -1,4 +1,4 @@
-{ lib, config, ... }:
+{ ... }:
 {
   imports = [
     # Include the results of the hardware scan. `--impure` option is required.
@@ -34,11 +34,6 @@
     ./timezone.nix
     ./nix-config.nix
     ./stylix.nix
-    ./tuigreet-hyprland.nix
     ./stateVersion.nix
   ];
-
-  myNixOS = {
-    tuigreet-hyprland.enable = lib.mkIf config.myNixOS.desktop.hyprland.enable true;
-  };
 }
