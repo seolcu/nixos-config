@@ -24,6 +24,7 @@
       kdePackages.krdc
       kleopatra
       libreoffice-qt6
+      vlc
     ];
 
     myNixOS = {
