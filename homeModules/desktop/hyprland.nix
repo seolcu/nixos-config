@@ -1,5 +1,4 @@
 {
-  pkgs,
   lib,
   config,
   ...
@@ -10,19 +9,6 @@
   };
 
   config = lib.mkIf config.myHome.desktop.hyprland.enable {
-    programs = {
-      mpv.enable = true;
-      swaylock.enable = true;
-      rofi = {
-        enable = true;
-        package = pkgs.rofi-wayland;
-      };
-    };
-    services = {
-      hyprpaper.enable = true;
-      dunst.enable = true;
-      clipman.enable = true;
-    };
     wayland.windowManager.hyprland = {
       enable = true;
       settings = {
@@ -310,10 +296,15 @@
         imv.enable = true;
         kitty.enable = true;
         mpv.enable = true;
+        rofi-wayland.enable = true;
+        swaylock.enable = true;
         waybar.enable = true;
       };
       services = {
+        clipman.enable = true;
+        dunst.enable = true;
         hypridle.enable = true;
+        hyprpaper.enable = true;
       };
     };
   };

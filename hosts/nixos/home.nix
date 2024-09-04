@@ -1,6 +1,10 @@
 { pkgs, username, ... }:
 
 {
+  myHome = {
+    presets.desktop.enable = true;
+  };
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
