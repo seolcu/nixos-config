@@ -20,19 +20,16 @@
       ...
     }@inputs:
     let
-      system = "x86_64-linux";
-      username = "seolcu";
-    in
-    {
-      nixosConfigurations = {
-        nixos = nixpkgs.lib.nixosSystem {
+      preset =
+        { username, hostname }:
+        nixpkgs.lib.nixosSystem {
           specialArgs = {
-            inherit system;
             inherit inputs;
             inherit username;
+            inherit hostname;
           };
           modules = [
-            ./hosts/nixos/configuration.nix
+            ./hosts/${hostname}/configuration.nix
             ./nixosModules
             inputs.chaotic.nixosModules.default
             inputs.stylix.nixosModules.stylix
@@ -42,19 +39,31 @@
                 extraSpecialArgs = {
                   inherit inputs;
                   inherit username;
+                  inherit hostname;
                 };
                 useGlobalPkgs = true;
                 useUserPackages = true;
                 # backupFileExtension = "backup";
                 users.${username} = {
                   imports = [
-                    ./hosts/nixos/home.nix
+                    ./hosts/${hostname}/home.nix
                     ./homeModules
                   ];
                 };
               };
             }
           ];
+        };
+    in
+    {
+      nixosConfigurations = {
+        T16G1 = preset {
+          username = "seolcu";
+          hostname = "T16G1";
+        };
+        T480s = preset {
+          username = "seolcu";
+          hostname = "T480s";
         };
       };
     };
