@@ -14,8 +14,7 @@
     ./services
 
     # Networking
-    ./firewall.nix
-    ./networkmanager.nix
+    ./networking
 
     # i18n
     ./i18n
