@@ -21,6 +21,16 @@
       epiphany
       geary
     ];
+    environment.systemPackages = with pkgs; [
+      gnome-tweaks
+      gnomeExtensions.appindicator
+      gnomeExtensions.gsconnect
+      gnomeExtensions.caffeine
+      gnomeExtensions.vitals
+      gnomeExtensions.thinkpad-battery-threshold
+      fragments
+      libreoffice
+    ];
 
     myNixOS = {
       i18n.ibus.enable = lib.mkDefault true;

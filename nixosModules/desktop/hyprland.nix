@@ -1,4 +1,9 @@
-{ lib, config, ... }:
+{
+  lib,
+  config,
+  pkgs,
+  ...
+}:
 {
   options = {
     myNixOS.desktop.hyprland.enable = lib.mkEnableOption "Enable Hyprland desktop";
@@ -15,6 +20,12 @@
     programs = {
       nm-applet.enable = true;
     };
+    environment.systemPackages = with pkgs; [
+      hyprshot
+      nautilus
+      brightnessctl
+      pavucontrol
+    ];
 
     myNixOS = {
       i18n.fcitx5.enable = lib.mkDefault true;

@@ -1,4 +1,9 @@
-{ lib, config, ... }:
+{
+  lib,
+  config,
+  pkgs,
+  ...
+}:
 {
   options = {
     myNixOS.desktop.plasma.enable = lib.mkEnableOption "Enable Plasma 6";
@@ -12,6 +17,14 @@
       };
       desktopManager.plasma6.enable = true;
     };
+    environment.systemPackages = with pkgs; [
+      kdePackages.kcalc
+      kdePackages.ktorrent
+      kdePackages.discover
+      kdePackages.krdc
+      kleopatra
+      libreoffice-qt6
+    ];
 
     myNixOS = {
       i18n.fcitx5.enable = lib.mkDefault true;
