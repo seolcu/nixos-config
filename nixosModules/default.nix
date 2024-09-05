@@ -1,8 +1,7 @@
-{ ... }:
+{ hostname, ... }:
 {
   imports = [
-    # Include the results of the hardware scan. `--impure` option is required.
-    /etc/nixos/hardware-configuration.nix
+    ../hosts/${hostname}/hardware-configuration.nix
 
     # Boot
     ./boot
