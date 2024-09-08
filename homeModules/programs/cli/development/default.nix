@@ -7,6 +7,7 @@
 
   home.packages = with pkgs; [
     gcc
+    gnumake
     hugo
     openjdk
     nixd
