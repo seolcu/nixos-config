@@ -23,7 +23,7 @@
       kdePackages.discover
       kdePackages.krdc
       kleopatra
-      libreoffice-qt6
+      libreoffice-qt
       vlc
     ];
 
