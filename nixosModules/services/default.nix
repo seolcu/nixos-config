@@ -4,6 +4,7 @@
     ./avahi.nix
     ./bluetooth.nix
     ./cups.nix
+    ./envfs.nix
     ./flatpak.nix
     ./keymap.nix
     ./libinput.nix
