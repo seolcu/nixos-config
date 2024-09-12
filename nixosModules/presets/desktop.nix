@@ -31,6 +31,7 @@
         distrobox.enable = lib.mkDefault true;
         virt-manager.enable = lib.mkDefault true;
         virtualbox.enable = lib.mkDefault false;
+        vmware.enable = lib.mkDefault false;
         waydroid.enable = lib.mkDefault false;
       };
     };
