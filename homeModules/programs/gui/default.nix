@@ -17,7 +17,6 @@
   home.packages = with pkgs; [
     # Development
     vscode
-    android-studio
 
     # Hacking
     okteta
@@ -36,6 +35,5 @@
     rpi-imager
     prismlauncher
     gnome-disk-utility
-    quickemu
   ];
 }
