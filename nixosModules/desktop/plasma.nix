@@ -25,6 +25,7 @@
       kleopatra
       libreoffice-qt
       vlc
+      filelight
     ];
 
     myNixOS = {
