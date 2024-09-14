@@ -24,7 +24,6 @@
     fcrackzip
     zsteg
     pwndbg
-    pwntools
 
     # Etc
     unzip
