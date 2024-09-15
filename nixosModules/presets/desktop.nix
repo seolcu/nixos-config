@@ -28,7 +28,7 @@
         power-profiles-daemon.enable = lib.mkDefault true;
       };
       virtualisation = {
-        distrobox.enable = lib.mkDefault false;
+        distrobox.enable = lib.mkDefault true;
         gnome-boxes.enable = lib.mkDefault false;
         virt-manager.enable = lib.mkDefault true;
         virtualbox.enable = lib.mkDefault false;
