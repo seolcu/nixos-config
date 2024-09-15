@@ -8,6 +8,7 @@
     ./cava.nix
     ./fastfetch.nix
     ./htop.nix
+    ./pwndbg.nix
     ./starship.nix
   ];
 
@@ -23,7 +24,6 @@
     _7zz
     fcrackzip
     zsteg
-    pwndbg
 
     # Etc
     unzip
