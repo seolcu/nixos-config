@@ -18,11 +18,11 @@
       desktopManager.plasma6.enable = true;
     };
     environment.systemPackages = with pkgs; [
-      kcalc
-      ktorrent
-      discover
-      krdc
-      kgpg
+      kdePackages.kcalc
+      kdePackages.ktorrent
+      kdePackages.discover
+      kdePackages.krdc
+      kleopatra
       libreoffice-qt
       vlc
       filelight
