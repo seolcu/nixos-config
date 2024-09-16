@@ -24,6 +24,7 @@
       kdePackages.krdc
       kdePackages.kgpg
       libreoffice-qt
+      calligra
       vlc
       filelight
     ];
