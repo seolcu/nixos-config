@@ -22,7 +22,7 @@
       kdePackages.ktorrent
       kdePackages.discover
       kdePackages.krdc
-      kleopatra
+      kdePackages.kgpg
       libreoffice-qt
       vlc
       filelight
