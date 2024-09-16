@@ -23,10 +23,9 @@
       kdePackages.discover
       kdePackages.krdc
       kdePackages.kgpg
+      kdePackages.filelight
       libreoffice-qt
-      calligra
       vlc
-      filelight
     ];
 
     myNixOS = {
