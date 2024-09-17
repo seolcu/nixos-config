@@ -23,6 +23,7 @@
         bluetooth.enable = lib.mkDefault true;
         cups.enable = lib.mkDefault true;
         flatpak.enable = lib.mkDefault true;
+        fwupd.enable = lib.mkDefault true;
         libinput.enable = lib.mkDefault true;
         pipewire.enable = lib.mkDefault true;
         power-profiles-daemon.enable = lib.mkDefault true;
