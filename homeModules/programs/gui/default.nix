@@ -30,7 +30,6 @@
     protonvpn-gui
 
     # Etc
-    obsidian
     bottles
     rpi-imager
     prismlauncher
