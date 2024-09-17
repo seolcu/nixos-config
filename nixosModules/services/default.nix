@@ -6,6 +6,7 @@
     ./cups.nix
     ./envfs.nix
     ./flatpak.nix
+    ./fwupd.nix
     ./keymap.nix
     ./libinput.nix
     ./pipewire.nix
