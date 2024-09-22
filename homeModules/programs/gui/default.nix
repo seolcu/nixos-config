@@ -34,5 +34,6 @@
     rpi-imager
     prismlauncher
     gnome-disk-utility
+    obsidian
   ];
 }
