@@ -24,6 +24,9 @@
     # Programs
     ./programs
 
+    # Systemd
+    ./systemd
+
     # Services
     ./services
 
