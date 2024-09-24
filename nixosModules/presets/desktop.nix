@@ -8,7 +8,6 @@
     myNixOS = {
       boot = {
         cachyos-kernel.enable = lib.mkDefault true;
-        plymouth.enable = lib.mkDefault true;
       };
       desktop = {
         gnome.enable = lib.mkDefault false;

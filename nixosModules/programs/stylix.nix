@@ -44,5 +44,6 @@
         };
       };
     };
+    myNixOS.boot.plymouth.enable = lib.mkDefault true;
   };
 }
